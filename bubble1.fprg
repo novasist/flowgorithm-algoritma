@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="bubble1"/>
-        <attribute name="authors" value="Novasist Sinan"/>
+        <attribute name="name" value="bubbleSort"/>
+        <attribute name="authors" value="Novasist Sinan Kayapınar"/>
         <attribute name="about" value=""/>
         <attribute name="saved" value="2024-11-02 12:43:18 &#214;&#214;"/>
         <attribute name="created" value="Tm92YXNpc3QgU2luYW47Tk9WQVNJU1QtSFAtV0lOOzIwMjQtMTEtMDE7MDk6MDc6NTcgw5ZTOzM5MjY="/>

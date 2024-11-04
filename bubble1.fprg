@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bubble1"/>
+        <attribute name="authors" value="Novasist Sinan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-02 12:43:18 &#214;&#214;"/>
+        <attribute name="created" value="Tm92YXNpc3QgU2luYW47Tk9WQVNJU1QtSFAtV0lOOzIwMjQtMTEtMDE7MDk6MDc6NTcgw5ZTOzM5MjY="/>
+        <attribute name="edited" value="Tm92YXNpc3QgU2luYW47Tk9WQVNJU1QtSFAtV0lOOzIwMjQtMTEtMDI7MTI6NDM6MTggw5bDljs0OzQxNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, j, temp" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="dizi" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="dizi[i]" expression="random(100)+1"/>
+            </for>
+            <output expression="&quot;Dizi elemanlar&#305; :&quot;" newline="False"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="dizi[i]&amp;&quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+            <output expression="&quot;---- ----------------&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                <for variable="j" start="0" end="n-2-i" direction="inc" step="1">
+                    <if expression="dizi[j]&gt;dizi[j+1]">
+                        <then>
+                            <assign variable="temp" expression="dizi[j]"/>
+                            <assign variable="dizi[j]" expression="dizi[j+1]"/>
+                            <assign variable="dizi[j+1]" expression="temp"/>
+                            <output expression="dizi[j+1]&amp;&quot; ile &quot;&amp;dizi[j]&amp;&quot; yerde&#287;i&#351;tirdi &quot;" newline="False"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <output expression="&quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
